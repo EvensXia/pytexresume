@@ -5,7 +5,6 @@ import sys
 from pprint import pprint
 
 import yaml
-from git import Repo
 from pytexresume.resume import BasicResume
 from pytexresume.templates import Template
 
@@ -34,6 +33,7 @@ def install_templates(template_repo):
 
     # Clone the GitHub repository into the templates directory
     try:
+        from git import Repo
         clone_path = os.path.join(templates_dir, repo_name)
         print(f"Cloning {template_repo} into {clone_path}...")
         Repo.clone_from(template_repo, clone_path)

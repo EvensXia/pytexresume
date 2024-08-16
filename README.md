@@ -13,7 +13,7 @@ PyTexResume is a Python-based resume generator that utilizes LaTeX for high-qual
 ## Installation
 
 ```bash
-apt install texlive-full # texlive-full is needed
+apt install texlive-full git # texlive-full is needed, git only in usage of install templates
 python -m pip install pytexresume
 ```
 
