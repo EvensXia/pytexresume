@@ -22,7 +22,7 @@ python -m pip install pytexresume
 ```bash
 pytexresume list  # list all templates
 pytexresume install https://path/to/your/template/repo.git # install template from git link
-pytexresume remove # remove template installed
+pytexresume remove template_folder_name # remove template installed
 pytexresume gen /path/to/your/resume.yaml # as assets/example.yaml
 ```
 
