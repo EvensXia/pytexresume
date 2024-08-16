@@ -20,8 +20,8 @@ RESUME:
     location:
       en: "San Francisco, CA"
       zh-cn: "加利福尼亚州，旧金山"
-    github: "https://github.com/johndoe"
-    website: "https://johndoe.dev"
+    github: "https://github.com/example"
+    website: "https://example.com"
 
   Objective:
     title:

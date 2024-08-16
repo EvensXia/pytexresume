@@ -1,0 +1,32 @@
+image: python:3.12
+
+stages:
+  - build
+  - deploy
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  PACKAGE_NAME: "pytexresume"
+
+cache:
+  paths:
+    - .cache/pip
+
+before_script:
+  - python -m pip install --upgrade pip
+  - pip install setuptools wheel twine build poetry --root-user-action=ignore
+
+build:
+  stage: build
+  script:
+    - poetry build
+  artifacts:
+    paths:
+      - dist/
+
+deploy:
+  stage: deploy
+  script:
+    - twine upload --skip-existing dist/* -u __token__ -p $TWINE_PASSWORD
+  only:
+    - main

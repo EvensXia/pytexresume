@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pytexresume"
+version = "0.1.0"
+description = "A Python-based resume generator with LaTeX support."
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{ include = "pytexresume" }]
+
+
+[tool.poetry.scripts]
+pytexresume = "pytexresume.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+yaml = "*"
+gitpython = "*"
+pylatex = "*"
+pydantic = "^1.10.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
