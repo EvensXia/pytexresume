@@ -1,0 +1,82 @@
+Document:
+  document_options: ["10pt"]
+  documentclass: article
+
+Package:
+  inputenc:
+    options: utf8
+  xifthen: {}
+  raleway:
+    options: default
+  moresize: {}
+  geometry:
+    options: a4paper, margin=1in
+  fancyhdr: {}
+  hyperref: {}
+  enumitem: {}
+  xcolor: {}
+  ifthen: {}
+  sectsty: {}
+
+Command:
+  - command: geometry
+    arguments: top=1.25cm, bottom=1.25cm, left=1.5cm, right=1.5cm
+  - command: setlength
+    arguments: \headheight
+    extra_arguments: 12pt
+  - command: setlength
+    arguments: \parindent
+    extra_arguments: 0mm
+  - command: renewcommand*\familydefault
+    arguments: \sfdefault
+  - command: renewcommand
+    arguments: \headrulewidth
+    extra_arguments: 0pt
+  - command: renewcommand
+    arguments: \footrulewidth
+    extra_arguments: 0pt
+  - command: renewcommand
+    arguments: \thepage
+    extra_arguments: ""
+  - command: renewcommand
+    arguments: \thesection
+    extra_arguments: ""
+  - command: sectionfont
+    arguments: \fontsize{14}{17}\selectfont\bfseries\color{darkgray}
+  - command: subsectionfont
+    arguments: \fontsize{12}{15}\selectfont\bfseries
+  - command: setlist
+    arguments: leftmargin=*, itemsep=0pt, topsep=0pt, partopsep=0pt
+    options: itemize
+  - command: pagestyle
+    arguments: fancy
+  - command: fancyhf
+    arguments: ""
+  - command: definecolor
+    arguments:
+      - darkgray
+      - rgb
+    extra_arguments: 0.3, 0.3, 0.3
+
+CustomCommands:
+  \resumeSection:
+    args: 1
+    cmd: \section*{#1}
+  \resumeSubsection:
+    args: 2
+    cmd: \subsection*{\textbf{#1}\hfill\textit{#2}}
+  \resumeSubsectionProject:
+    args: 2
+    cmd: "\\subsection*{\\textbf{#1}\\hfill{\\normalfont\\itshape #2}}"
+  \resumeSubsectionTime:
+    args: 3
+    cmd: \subsection*{\textbf{#1} \hfill \textit{#3}}\subsubsection*{{#2}\vspace{-2mm}}
+  \resumeEducation:
+    args: 4
+    cmd: "\\textbf{#1} \\hfill \\textbf{\\textcolor{gray}{#2}}\\ #3, #4"
+  \resumeSingle:
+    args: 1
+    cmd: "{#1}"
+  \resumeSingleHead:
+    args: 2
+    cmd: \textbf{#1} {#2}

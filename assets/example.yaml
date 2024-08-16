@@ -1,0 +1,135 @@
+# GENERATE
+TEMPLATES:
+  - en_simple
+OUTPUT: reesume
+
+RESUME:
+  PersonalInfo:
+    title:
+      en: "Personal Information"
+      zh-cn: "个人信息"
+    name:
+      en: "John Doe"
+      zh-cn: "约翰·多伊"
+    experience:
+      en: "5 years in software development"
+      zh-cn: "5年软件开发经验"
+    email: "john.doe@example.com"
+    birth: "1990-01-01"
+    phone: "+1-123-456-7890"
+    location:
+      en: "San Francisco, CA"
+      zh-cn: "加利福尼亚州，旧金山"
+    github: "https://github.com/johndoe"
+    website: "https://johndoe.dev"
+
+  Objective:
+    title:
+      en: "Objective"
+      zh-cn: "职业目标"
+    description:
+      en: "To obtain a challenging position as a Senior Software Engineer where I can apply my skills in full-stack development and cloud computing."
+      zh-cn: "寻求一份高级软件工程师职位，在全栈开发和云计算领域应用我的技能。"
+
+  ResearchInterest:
+    title:
+      en: "Research Interests"
+      zh-cn: "研究兴趣"
+    areas:
+      - en: "Artificial Intelligence"
+        zh-cn: "人工智能"
+      - en: "Machine Learning"
+        zh-cn: "机器学习"
+      - en: "Distributed Systems"
+        zh-cn: "分布式系统"
+
+  Educations:
+    title:
+      en: "Education"
+      zh-cn: "教育背景"
+    educations:
+      - school_name:
+          en: "Stanford University"
+          zh-cn: "斯坦福大学"
+        school_abbreviation: "SU"
+        start_date: "2010"
+        end_date: "2014"
+        degree:
+          en: "Bachelor of Science in Computer Science"
+          zh-cn: "计算机科学学士"
+        faculty:
+          en: "School of Engineering"
+          zh-cn: "工程学院"
+        honors:
+          - en: "Graduated with Honors"
+            zh-cn: "荣誉毕业"
+
+  Skills:
+    title:
+      en: "Skills"
+      zh-cn: "技能"
+    skill_items:
+      - category:
+          en: "Programming Languages"
+          zh-cn: "编程语言"
+        skills:
+          - "Python"
+          - "JavaScript"
+          - "C++"
+      - category:
+          en: "Frameworks \\& Libraries"
+          zh-cn: "框架与库"
+        skills:
+          - "React"
+          - "Django"
+          - "Node.js"
+      - category:
+          en: "Tools \\& Platforms"
+          zh-cn: "工具与平台"
+        skills:
+          - "Docker"
+          - "Kubernetes"
+          - "AWS"
+
+  Jobs:
+    title:
+      en: "Work Experience"
+      zh-cn: "工作经历"
+    jobs:
+      - company_name:
+          en: "Tech Innovators Inc."
+          zh-cn: "科技创新公司"
+        job_title:
+          en: "Senior Software Engineer"
+          zh-cn: "高级软件工程师"
+        start_date: "2018"
+        end_date: "Present"
+        job_duties:
+          title:
+            en: "Key Responsibilities"
+            zh-cn: "主要职责"
+          description:
+            en: "Leading the development of scalable web applications and microservices."
+            zh-cn: "领导可扩展的Web应用程序和微服务的开发。"
+        items:
+          - item_name:
+              en: "Project Alpha"
+              zh-cn: "Alpha项目"
+            start_date: "2019"
+            end_date: "2020"
+            description:
+              en: "Developed and deployed a real-time analytics platform for monitoring user interactions."
+              zh-cn: "开发并部署了一个实时分析平台，用于监控用户交互。"
+            note:
+              en: "Received the 'Best Innovation' award."
+              zh-cn: "获得“最佳创新”奖。"
+            points:
+              - key:
+                  en: "Technology Stack"
+                  zh-cn: "技术栈"
+                description:
+                  en: "Python, Django, PostgreSQL, Docker"
+                  zh-cn: "Python, Django, PostgreSQL, Docker"
+              - description:
+                  en: "Improved system performance by 30\\% through optimized query handling."
+                  zh-cn: "通过优化查询处理，将系统性能提升了30\\%。"
